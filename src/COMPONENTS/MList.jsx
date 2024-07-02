@@ -61,12 +61,12 @@ const MList = () => {
    
     <div className='w-[870px] h-[401px] gap-[10px] flex flex-col mt-[10px] '>
             
-          <div className='gap-[10px] flex flex-col'>
+          <div className='gap-[15px] flex flex-col'>
             {[1,2,3,4,5,6,7,8,9,10].map((val, i) =>(
               <div className='h-[33px] w-[870px] gap-[3px]'>
                 <div className='w-[852px] h-[30px] flex'>
                   <div className='w-[786px] h-[30px]   flex'>
-                    <div className='w-[18px] h-[18px] mt-[16px]'>
+                    <div className='w-[18px] h-[18px] mt-[3px]'>
                       <input type="checkbox" className='w-[18px] rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
                     </div>
                     <div className='w-[180px] h-[30px] gap-[9px]  flex'>
