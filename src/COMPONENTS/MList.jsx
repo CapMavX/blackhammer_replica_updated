@@ -8,10 +8,9 @@ import { CiImport } from 'react-icons/ci'
 
 const MList = () => {
   return (
-    <div className='max-w-[950px] max-h-screen mt-[29px] ml-[39px] rounded-[13px]  bg-white'>
+    <table className='max-w-[950px] max-h-screen mt-[29px] ml-[39px] rounded-[13px]  bg-white'>
        
-      <div className='w-[950px] h-[514px] mt-[24px] ml-[24px] mr-[24px] gap-[36px]  '>
-        <div className='max-w-fit h-[41px]    flex'>
+       <head className='max-w-[950px] h-[41px]   mt-[24px] ml-[24px] flex'>
        <div className='w-[234px] h-[40px] rounded-[8px] border-[0.5px] gap-[10px] bg-gray pt-[8px] pb-[11px] pl-[8px] pr-[11px]'>
         <div className='w-[Hug (34px)] h-[Hug (24px)] gap-[16px] flex flex-row'>
         <div className='w-[24px] h-[24px]'><CiSearch className='w-[20px] h-[20px] mt-[2px] ml-[2px] text-[#88A1B4]'/></div>
@@ -39,7 +38,9 @@ const MList = () => {
             </div> 
        </div>
        
-    </div>
+    </head>
+      <body className=' h-[514px] mt-[24px] ml-[24px] mr-[24px] gap-[36px]  '>
+        
   
       
     <div className='w-[870px]   mt-[29px] flex flex-col '>
@@ -58,225 +59,50 @@ const MList = () => {
         </div>
     </div>
    
-    <div className='w-[870px] h-[401px] gap-[10px] flex flex-col '>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
+    <div className='w-[870px] h-[401px] gap-[10px] flex flex-col mt-[10px] '>
+            
+          <div className='gap-[10px] flex flex-col'>
+            {[1,2,3,4,5,6,7,8,9,10].map((val, i) =>(
+              <div className='h-[33px] w-[870px] gap-[3px]'>
                 <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
+                  <div className='w-[786px] h-[30px]   flex'>
+                    <div className='w-[18px] h-[18px] mt-[16px]'>
+                      <input type="checkbox" className='w-[18px] rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
+                    </div>
+                    <div className='w-[180px] h-[30px] gap-[9px]  flex'>
+                      <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/>
+                      </div>
+                      <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]'>Muhammad Isah Abdulkadir</a>
+                    </div>
+                    <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
+                    <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger State</p>
+                    <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px] text-[#181817]'>Suleja/Tafa</p>
+                    <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
+                    <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
+                    </div>
+                    <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]'>
+                      <BiMessageSquareDots className='w-[13.33px] h-[13.33px mt-[1.33px] ml-[1.33px] text-[#181817]'/>
+                    </div>
+
+                  </div>
+                  <hr/>
                 </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-            <div className='h-[33px] w-[870px] gap-[3px]  '>
-                <div className='w-[852px] h-[30px] flex'>
-                        <div className='w-[786px] h-[30px] flex'>
-                            <div className='w-[18px] h-[18px] mt-[6px]'>
-                            <input type="checkbox" className='w-[18px]  rounded-[5px] border-[1px] opacity-[50%] text-[#88A1B3]' />
-                            </div>
-                            <div className='w-[180px]  h-[30px] gap-[9px] flex'>
-                                    <div className='w-[20px] h-[20px] '><CgProfile className='w-[18.95px] h-[18.95px] mt-[5.53px] ml-[5.53px] text-[#168DE2]'/></div>
-                           <a href='/User' className='w-[160px] h-[16px] font-[Inter] text-[12px] leading-[15.73px] text-[#181817] mt-[6.53px]' >Muhammad Isah Abdulkadir</a>
-                            </div>
-                            <p className='w-[110px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[5px] text-[#181817]'>+234 804 567 9876</p>
-                            <p className='w-[60px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[30px] text-[#181817]'>Niger state</p>
-                            <p className='w-[61px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[40px]  text-[#181817]'>Sulej/Tafa</p>
-                            <p className='w-[121px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[55px] text-[#181817]'>Tundan wada south</p>
-                            <p className='w-[78px] h-[16px] mt-[7px] font-[Inter] font-normal text-[12px] leading-[15.73px] ml-[35px] text-[#181817]'>Six (6) Years</p>
-                        </div>
-                        <div className='w-[16px] h-[16px] mt-[7px] ml-[60px]' >
-                        <BiMessageSquareDots className='w-[13.33px] h-[13.33px] mt-[1.33px] ml-[1.33px] text-[#181817]'/>
-                        </div>
-                </div>
-                <hr/>
-            </div>
-          
+              
+              
+              
+            ))}
+          </div>
 
     </div>
-
-    
-    
-   
-         
-    
-   
-    
-
     </div>
+    
 
 
-    </div>
+    </body>
 
     
       
-      </div>
+      </table>
    
    
   )
